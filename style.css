@@ -150,6 +150,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 10px;
+    flex-basis: 50%;
 
 }
 .footer{

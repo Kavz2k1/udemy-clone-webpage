@@ -115,7 +115,7 @@ body{
 
 }
 .course-card{
-    width: 300px;
+    width: calc(25% - 20px);
 }
 .course-card img{
     width: 100%;
@@ -150,7 +150,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 10px;
-    flex-basis: 50%;
+    gap: 20px;
 
 }
 .footer{

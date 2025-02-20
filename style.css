@@ -4,6 +4,8 @@
 }
 body{
     font-family: "Gabarito", serif;
+    margin:10px;
+    padding: 10px;
 }
 .navbar{
     padding: 10px;
@@ -79,6 +81,14 @@ body{
     padding: 10PX;
     border-radius: 30PX;
     color: white;
+    cursor: pointer;
+    border: solid #A435F0 1px;
+}
+.categories p:hover{
+    transition:1s;
+    background-color: transparent;
+    border: solid #A435F0 1px;
+    color: black;
 }
 .sale-image img{
     width: 100%;
@@ -96,7 +106,20 @@ body{
     align-items: center;
     text-align: center;
     border: solid black 2px;
-
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    }
+    @keyframes zoom{
+        0%{
+            transform: scale(0);
+            opacity: 0;
+        }
+        100%{
+            transform: scale(1);
+            opacity: 1;
+        }
     }
 
 
@@ -115,7 +138,7 @@ body{
 
 }
 .course-card{
-    width: calc(25% - 20px);
+    width: 300px;
 }
 .course-card img{
     width: 100%;
@@ -150,6 +173,7 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 10px;
+
     gap: 20px;
 
 }
